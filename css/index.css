@@ -9,7 +9,6 @@
 body {
   background: url(../img/background-page.png) no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 header {
@@ -80,7 +79,7 @@ ul li {
 }
 
 .pricing-row {
-  width: 90%;
+  width: 60%;
   max-width: 1100px;
   margin: auto;
   display: grid;
@@ -103,7 +102,7 @@ ul li {
 }
 
 .pricing-col p, .pricing-col h3, li{
-  padding: 20px;
+  padding: 15px;
 }
 
 .pricing-col p {
@@ -115,13 +114,15 @@ ul li {
   padding-bottom: 10px;
 }
 
-h3 > span {
+span {
   font-size: 12px;
   font-weight: normal;
 }
 
 .price:hover {
   border: 2px solid #E479F2;
+  transition: transform .6s;
+  transform: scale(1.1);
 }
 
 .buy {
