@@ -32,17 +32,19 @@ a#link {
   color: white;
   text-align: center;
   justify-items: flex-start;
-  margin-left: 10px
+  margin-left: 10px;
+  font-size: 13px;
 }
 
 #up, #in {
-  width: 110px;
-  height: 40px;
+  width: 70px;
+  height: 25px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
   color: white;
   font-weight: bold;
+  font-size: 12px;
   margin-left: 10px;
 
   transition: .3s all;
@@ -81,8 +83,7 @@ ul li {
 }
 
 .pricing-row {
-  width: 60%;
-  max-width: 1100px;
+  width: 270px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -159,3 +160,24 @@ body::-webkit-scrollbar-thumb {
   background-color: #330a81;
   border-radius: 20px; 
 }
+
+@media screen and (min-width: 480px) {
+  a#link {
+    font-size: 15px;
+  }
+
+  #up, #in {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .pricing-row {
+    width: 750px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
