@@ -9,6 +9,8 @@
 body {
   background: url(../img/background-page.png) no-repeat;
   background-size: cover;
+  margin-bottom: 30px;
+  overflow-y: scroll;
 }
 
 header {
@@ -96,7 +98,7 @@ ul li {
     padding: 10% 15%;
     color: white;
     text-align: center;
-    grid-gap: 50px;
+    gap: 50px;
 
     transition: filter .4s;
 }
@@ -142,4 +144,18 @@ span {
   background-image: linear-gradient(to right, #C763F2, #E479F2);
   filter: brightness(1.2);
   transform: scale(0.98);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+body::-webkit-scrollbar-track {
+  background: #1F064D; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #330a81;
+  border-radius: 20px; 
 }
